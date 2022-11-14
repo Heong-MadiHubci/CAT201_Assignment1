@@ -1,0 +1,7 @@
+.Box{
+    background-color: #546787;
+    box-shadow: 0 0 5px #ccc;
+    margin: 0 auto;
+    padding: 10px;
+    width: 300px;
+}
