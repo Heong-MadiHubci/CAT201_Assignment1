@@ -7,5 +7,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="batik-anim-1.14" level="project" />
+    <orderEntry type="library" name="auxiliary" level="project" />
   </component>
 </module>

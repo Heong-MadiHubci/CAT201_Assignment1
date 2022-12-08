@@ -13,17 +13,37 @@
                 <div class="itemBox">
                     <div class="Title">
                         <h1>Excel to CSV Converter</h1>
-                        <h3>Convert file from excel to CSV format online for free.</h3>
+                        <div class="marquee">
+                            <div class="marqueeInner">
+                                <span>
+                                    <p class="scrollingText">Convert file from excel to CSV format online for free</p>
+                                </span>
+                                <span>
+                                    <p class="scrollingText">Convert file from excel to CSV format online for free</p>
+                                </span>
+                                <span>
+                                    <p class="scrollingText">Convert file from excel to CSV format online for free</p>
+                                </span>
+                                <span>
+                                    <p class="scrollingText">Convert file from excel to CSV format online for free</p>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
                     </div>
 
                     <div class="uploadContainer">
                         <form action = "download.php" method = "POST" enctype="multipart/form-data">
                             <div class="Card">
                                 <img src="Public/selectFile.png" alt="fileIcon" width="313" height="313">
-                                <input type="file" name="uploaded_File" value="excel" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                                <input type="file" name="userFile" value="excel file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
                             </div>
                             <div class="Submit">
-                                <button type="submit" value="Convert" name="submit">Convert Now</button>
+                                <input type ="submit" value ="Convert">
                             </div>
                         </form>
                     </div>
