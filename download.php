@@ -90,7 +90,7 @@
                 <div class="descContainer">
                     <div class="step1">
                         <div class="imgBox" >
-                            <img src="Public/pm_ProfilePicture.png" alt="fileIcon" width="370" height="349">
+                            <img src="Public/pm_ProfilePicture.png" alt="fileIcon" width="270" height="269">
                         </div>
                         <p>Gwee Per Ming</p>
                         <p>159372</p>
@@ -98,7 +98,7 @@
 
                     <div class="step2">
                         <div class="imgBox">
-                            <img src="Public/wk_ProfilePicture.png" alt="convertIcon" width="360" height="349">
+                            <img src="Public/wk_ProfilePicture.png" alt="convertIcon" width="260" height="269">
                         </div>
 
                         <p>Thong Wai Hong</p>
@@ -107,7 +107,7 @@
 
                     <div class="step3">
                         <div class="imgBox">
-                            <img src="Public/downloadIcon.png" alt="downloadIcon" width="113" height="113">
+                            <img src="Public/yq_ProfilePicture.jpg" alt="downloadIcon" width="260" height="269">
                         </div>
                         <p>Ooi Yong Qin</p>
                         <p>159067</p>
