@@ -13,6 +13,59 @@
     <title>Download CSV converted</title>
 </head>
 <body>
+    <?php
+    if(isset($_FILES['uploaded_File'])){
+    //Array to display different errors
+        $phpFileUploadErrors = array(
+            0 => 'There is no error, the file uploaded with success',
+            1 => 'The uploaded file exceeds the upload_max_filesize directive in php.ini',
+            2 => 'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form',
+            3 => 'The uploaded file was only partially uploaded',
+            4 => 'No file was uploaded',
+            6 => 'Missing a temporary folder',
+            7 => 'Failed to write file to disk.',
+            8 => 'A PHP extension stopped the file upload.',
+        );
+
+    //Initialise the error as false
+        $extension_error = false;
+
+    //Set the acceptable file format
+        $extensions_type = array ('xlsx');
+
+    //Store the uploaded file name
+        $file_name = $_FILES['uploaded_File']['name'];
+
+    //explode() function breaks a string into an array to determine the file extension type
+        $file_extension = explode('.',$_FILES['uploaded_File']['name']);
+        $file_extension = end($file_extension);
+
+    //if the acceptable file format not equal to the uploaded file
+    //Set the extension error to true
+        if(!in_array($file_extension,$extensions_type)){
+            $extension_error = true;
+
+        }
+
+    //if the error of upload is not equal to 0
+        if($_FILES['uploaded_File']['error']){
+            echo $phpFileUploadErrors[$_FILES['uploaded_File']['error']];
+        }
+    //Prompt user that the file extension type is not accepted
+        else if( $extension_error){
+            echo "Invalid File extension!"; echo "We only accept excel file.";
+        }
+
+        else{
+            move_uploaded_file($_FILES['uploaded_File']['tmp_name'], $_FILES['uploaded_File']['name']);
+    //        move_uploaded_file($_FILES['uploaded_File']['tmp_name'], 'folder/'.$_FILES['uploaded_File']['name']);
+
+            echo exec("javac -cp \".:poi-3.8-sources.jar\" Main.java");
+            echo exec("java -cp \".:poi-3.8-sources.jar\" Main $file_name" );
+        }
+    }
+    ?>
+
     <article>
         <div class="itemWrapper">
             <div class="itemBox">

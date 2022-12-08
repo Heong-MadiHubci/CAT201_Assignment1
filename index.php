@@ -20,7 +20,7 @@
                         <form action = "download.php" method = "POST" enctype="multipart/form-data">
                             <div class="Card">
                                 <img src="Public/selectFile.png" alt="fileIcon" width="313" height="313">
-                                <input type="file" name="userFile" value="excel" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                                <input type="file" name="uploaded_File" value="excel" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
                             </div>
                             <div class="Submit">
                                 <button type="submit" value="Convert" name="submit">Convert</button>
