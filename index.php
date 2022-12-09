@@ -31,9 +31,6 @@
                             </div>
 
                         </div>
-
-
-
                     </div>
 
                     <div class="uploadContainer">
