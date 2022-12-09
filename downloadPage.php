@@ -5,13 +5,8 @@
     {
         $phpFileUploadErrors = array(
             0 => 'There is no error, the file uploaded with success',
-            1 => 'The uploaded file exceeds the upload_max_filesize directive in php.ini',
-            2 => 'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form',
-            3 => 'The uploaded file was only partially uploaded',
-            4 => 'No file was uploaded',
-            6 => 'Missing a temporary folder',
-            7 => 'Failed to write file to disk.',
-            8 => 'A PHP extension stopped the file upload.',
+            1 => 'No file was uploaded',
+            2 => 'Missing a temporary folder',
         );
 
         //Set the error becomes false
@@ -85,8 +80,8 @@
                     <div class="imgBox" >
                         <img src="Public/pm_ProfilePicture.png" alt="fileIcon" width="270" height="269">
                     </div>
-                    <p>Gwee Per Ming</p>
-                    <p>159372</p>
+                    <p class="underline-text-animation">Gwee Per Ming</p>
+                    <p class="underline-text-animation">159372</p>
                 </div>
 
                 <div class="step2">
@@ -94,16 +89,16 @@
                         <img src="Public/wk_ProfilePicture.png" alt="convertIcon" width="260" height="269">
                     </div>
 
-                    <p>Thong Wai Hong</p>
-                    <p>158876</p>
+                    <p class="underline-text-animation">Thong Wai Hong</p>
+                    <p class="underline-text-animation">158876</p>
                 </div>
 
                 <div class="step3">
                     <div class="imgBox">
                         <img src="Public/yq_ProfilePicture.jpg" alt="downloadIcon" width="260" height="269">
                     </div>
-                    <p>Ooi Yong Qin</p>
-                    <p>159067</p>
+                    <p class="underline-text-animation">Ooi Yong Qin</p>
+                    <p class="underline-text-animation">159067</p>
                 </div>
             </div>
         </div>

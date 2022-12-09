@@ -126,7 +126,16 @@ input:disabled{
     background-color:rgb(161, 161, 161);
 }
 
+img {
+    transform: scale(1);
+    transition: var(--jerk-transition);
 
+}
+
+img:hover {
+     transform: scale(1.25);
+     transition: var(--jerk-transition);
+ }
 
 .itemWrapper{
     width: 100vw;
@@ -250,6 +259,31 @@ hr{
 .imgBox{
     margin-bottom: 4%;
 }
+
+.underline-text-animation {
+    display: inline-block;
+    position: relative;
+
+}
+
+.underline-text-animation::after {
+    content: "";
+    background-color: #F8C33A;
+    position: absolute;
+    width: 70%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -2px;
+    left: 15%;
+    transform-origin: bottom right;
+    transition: all 0.5s ease-in-out;
+}
+
+.underline-text-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
 
 

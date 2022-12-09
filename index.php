@@ -53,7 +53,7 @@
                             <div class="imgBox" >
                                 <img src="Public/fileIcon.png" alt="fileIcon" width="113" height="113">
                             </div>
-                            <p>Select an excel file from your computer</p>
+                            <p class="underline-text-animation">Select an excel file from your computer</p>
                         </div>
                         <hr>
                         <div class="step2">
@@ -61,14 +61,14 @@
                                 <img src="Public/convertIcon.png" alt="convertIcon" width="113" height="113">
                             </div>
 
-                            <p>Our system will automatically help you to convert the filetype to CSV</p>
+                            <p class="underline-text-animation">Our system will automatically help you to convert the filetype to CSV</p>
                         </div>
                         <hr>
                         <div class="step3">
                             <div class="imgBox">
                                 <img src="Public/downloadIcon.png" alt="downloadIcon" width="113" height="113">
                             </div>
-                            <p>Download your converted file immediately</p>
+                            <p class="underline-text-animation">Download your converted file immediately</p>
                         </div>
                     </div>
                 </div>
