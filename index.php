@@ -16,16 +16,16 @@
                         <div class="marquee">
                             <div class="marqueeInner">
                                 <span>
-                                    <p class="scrollingText">Convert file from excel to CSV format online for free</p>
+                                    <h3 class="scrollingText">Convert file from excel to CSV format online for free</h3>
                                 </span>
                                 <span>
-                                    <p class="scrollingText">Convert file from excel to CSV format online for free</p>
+                                    <h3 class="scrollingText">Convert file from excel to CSV format online for free</h3>
                                 </span>
                                 <span>
-                                    <p class="scrollingText">Convert file from excel to CSV format online for free</p>
+                                    <h3 class="scrollingText">Convert file from excel to CSV format online for free</h3>
                                 </span>
                                 <span>
-                                    <p class="scrollingText">Convert file from excel to CSV format online for free</p>
+                                    <h3 class="scrollingText">Convert file from excel to CSV format online for free</h3>
                                 </span>
 
                             </div>
@@ -37,13 +37,14 @@
                     </div>
 
                     <div class="uploadContainer">
-                        <form action = "download.php" method = "POST" enctype="multipart/form-data">
+                        <form action = "downloadPage.php" method = "post" enctype="multipart/form-data">
                             <div class="Card">
                                 <img src="Public/selectFile.png" alt="fileIcon" width="313" height="313">
-                                <input type="file" name="userFile" value="excel file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+                                <label for="userFile"></label>
+                                <input type="file" name="userFile"    />
                             </div>
                             <div class="Submit">
-                                <input type ="submit" value ="Convert">
+                                <input type ="submit"  value="Upload Excel" name="submit" >
                             </div>
                         </form>
                     </div>
