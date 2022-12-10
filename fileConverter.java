@@ -57,51 +57,6 @@ public class fileConverter {
             return data;
         }
 
-
-
-    //Main function
-    public static void main(String[] args){
-        String fileName = args[0];
-
-        String directory = System.getProperty("user.dir");
-
-        directory = directory.replace('\\', '/');
-
-        String fileNameWithoutExt = FilenameUtils.removeExtension(fileName);
-        String extension = FilenameUtils.getExtension(fileName);
-
-        String inputPath = "";
-        if(extension.equalsIgnoreCase("xlsx"))
-            inputPath = directory + "/convertedFile/" + fileNameWithoutExt + ".xlsx";
-        else if (extension.equalsIgnoreCase("xls"))
-            inputPath = directory + "/convertedFile/" + fileNameWithoutExt + ".xls";
-
-        String outputPath = directory + "/convertedFile/" + fileNameWithoutExt + ".csv";
-
-        File inputFile = new File(inputPath);
-        File outputFile = new File(outputPath);
-
-        try {
-            FileOutputStream fos = new FileOutputStream(outputFile);
-            FileInputStream fis = new FileInputStream(inputFile);
-
-            Workbook workbook = null;
-            workbook = WorkbookFactory.create(fis);
-
-            StringBuffer strbuff = null;
-
-            for(int i=0;i<workbook.getNumberOfSheets();i++) {
-                strbuff = getStringBuffer(workbook.getSheetAt(i));
-            }
-
-            fos.write(strbuff.toString().getBytes());
-
-            fis.close();
-            fos.close();
-        } catch (Exception e) {
-            System.out.println("Got Error occur!Pls Check");
-        }
-    }
 }
 
 

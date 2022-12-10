@@ -37,7 +37,6 @@
                         <form action = "downloadPage.php" method = "post" enctype="multipart/form-data">
                             <div class="Card">
                                 <img src="Public/selectFile.png" alt="fileIcon" width="313" height="313">
-                                <label for="userFile"></label>
                                 <input type="file" name="userFile"    />
                             </div>
                             <div class="Submit">
